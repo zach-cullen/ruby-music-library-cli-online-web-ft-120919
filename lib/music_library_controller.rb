@@ -26,8 +26,11 @@ class MusicLibraryController
       welcome_message
       user_input = gets.strip
       
+      #case user_input
     end 
-    
+  end
+  
+  def list_songs
     
   end
 end
