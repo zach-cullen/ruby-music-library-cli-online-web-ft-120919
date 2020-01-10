@@ -32,7 +32,6 @@ class MusicLibraryController
       case user_input
         when "list artists"
           puts "HERE'S YOUR LIST"
-        end
       end
     end
     
