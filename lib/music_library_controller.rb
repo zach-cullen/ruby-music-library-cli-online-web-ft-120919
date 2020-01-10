@@ -90,3 +90,5 @@ class MusicLibraryController
     
   end
 end
+
+MusicImporter.new.call
