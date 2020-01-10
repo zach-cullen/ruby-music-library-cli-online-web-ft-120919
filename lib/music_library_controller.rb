@@ -9,7 +9,7 @@ class MusicLibraryController
   
   def call
     puts "Welcome to your music library!"
-    puts "Please give me input"
+    puts "To list all of your songs, enter 'list songs'."
     user_input = gets.strip
   end
 end
