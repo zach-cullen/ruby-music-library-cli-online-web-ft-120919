@@ -25,7 +25,16 @@ class MusicLibraryController
     until user_input == "exit"
       welcome_message
       user_input = gets.strip
+      switcher
     end 
+    
+    def switcher
+      case user_input
+        when "list artists"
+          puts "HERE'S YOUR LIST"
+        end
+      end
+    end
     
   end
 end
