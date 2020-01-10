@@ -44,7 +44,8 @@ class MusicLibraryController
     end
   end
   
-  def list_artist(artist)
+  def list_songs_by_artist(artist)
+    Artist.all.find()
   end
   
   def list_genre(genre)
