@@ -36,7 +36,6 @@ class MusicLibraryController
         puts "listing genre"
       else
         puts "huh?"
-      end
     end
     
   end
