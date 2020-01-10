@@ -17,7 +17,8 @@ class MusicImporter
   end
   
   def import
-    @files.each do |file| 
+    files = Self.files
+    files.each do |file| 
       song = Song.create_from_filename(file)
       @library << song
     end
