@@ -10,6 +10,6 @@ class MusicLibraryController
   def call
     puts "Welcome to your music library!"
     puts "Please give me input"
-    user_input = gets.
+    user_input = gets.strip
   end
 end
