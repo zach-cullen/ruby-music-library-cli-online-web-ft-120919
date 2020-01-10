@@ -5,7 +5,7 @@ class MusicLibraryController
   
   def call
     puts "Welcome to your music library!"
-    user_input = nil
+    user_input = ""
     
     def welcome_message
       puts "To list all of your songs, enter 'list songs'."
