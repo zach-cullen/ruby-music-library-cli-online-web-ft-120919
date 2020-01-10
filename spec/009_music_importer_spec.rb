@@ -1,8 +1,9 @@
 require "spec_helper"
+require 'pry'
 
 describe "MusicImporter" do
   let(:music_importer) { MusicImporter.new("./spec/fixtures/mp3s") }
-
+  
   describe "#initialize" do
     it "accepts a file path to parse MP3 files from" do
       expect(music_importer.instance_variable_defined?(:@path)).to be(true)
@@ -34,7 +35,7 @@ describe "Song" do
   describe ".new_from_filename" do
     it "initializes a song based on the passed-in filename" do
       song = Song.new_from_filename("Thundercat - For Love I Come - dance.mp3")
-
+      
       expect(song.name).to eq("For Love I Come")
       expect(song.artist.name).to eq("Thundercat")
       expect(song.genre.name).to eq("dance")
