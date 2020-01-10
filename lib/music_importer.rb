@@ -1,10 +1,11 @@
 class MusicImporter
   attr_accessor :path
-  attr_reader :files
+  attr_reader :files, :library
   
   def initialize(file_path)
     @path = file_path
     @files = []
+    @library = []
   end
   
   def path
@@ -13,5 +14,12 @@ class MusicImporter
   
   def files
     Dir.children(self.path).each {|file| @files << file}
+  end
+  
+  def import
+    Self.files.each do |file| 
+      song = Song.create_from_filename(file)
+      @library << song
+    end
   end
 end
