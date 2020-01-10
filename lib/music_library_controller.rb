@@ -9,6 +9,7 @@ class MusicLibraryController
   
   def call
     puts "Welcome to your music library!"
+    user_input = nil
     
     until user_input == "exit"
       puts "To list all of the artists in your library, enter 'list artists'."
@@ -21,6 +22,10 @@ class MusicLibraryController
       puts "What would you like to do?"
       user_input = gets.strip
     end 
+    
+    case user_input
+      when user_input == 
+    end
     
   end
 end
