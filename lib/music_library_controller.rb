@@ -26,8 +26,6 @@ class MusicLibraryController
       welcome_message
       user_input = gets.strip
       
-      case user_input
-      end
     end 
     
     
