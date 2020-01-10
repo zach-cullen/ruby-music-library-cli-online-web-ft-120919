@@ -30,7 +30,8 @@ class MusicLibraryController
   end
   
   def list_songs
-    Song.all. {|song| song.name}.sort
+    all_song_names = Song.all.map {|song| song.name}
+    all_song_names.sort.each_with_index(1) do |song|
   end
   
   def list_artists
