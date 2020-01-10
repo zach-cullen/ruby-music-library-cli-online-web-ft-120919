@@ -25,6 +25,10 @@ class MusicLibraryController
     until user_input == "exit"
       welcome_message
       user_input = gets.strip
+      
+      case user_input
+        when 
+      end
     end 
     
     
