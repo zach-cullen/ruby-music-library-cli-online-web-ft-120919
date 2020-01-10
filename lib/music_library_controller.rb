@@ -9,10 +9,12 @@ class MusicLibraryController
   
   def call
     puts "Welcome to your music library!"
+    user_input = nil
     
-    until user_input = 'exit'
+    while user_input != "exit"
       puts "To list all of your songs, enter 'list songs'."
       user_input = gets.strip
     end
+    
   end
 end
