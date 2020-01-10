@@ -33,6 +33,8 @@ class MusicLibraryController
           list_songs_by_artist
         when "list genre"
           list_songs_by_genre
+        when "play song"
+          play_song
       end
     end 
   end
@@ -75,6 +77,11 @@ class MusicLibraryController
         puts "#{i}. #{a.artist.name} - #{a.name}"
       end
     end
+  end
+  
+  def play_song
+    puts "Please choose a song"
+    input = gets.strip
   end
   
   def list_genre(genre)
