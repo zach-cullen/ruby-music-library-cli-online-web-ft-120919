@@ -83,10 +83,5 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip
   end
-  
-  def list_genre(genre)
-  end
-  
-  def play_song(song)
-  end
+
 end
