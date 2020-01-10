@@ -86,7 +86,7 @@ class MusicLibraryController
       song = Song.all.sort {|a, b| a.name <=> b.name}[input - 1]
     end
     
-    puts "Playing #{song.name}"
+    puts "Playing #{song.name}" if song
     
   end
 
