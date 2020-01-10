@@ -14,7 +14,7 @@ class MusicLibraryController
     while user_input != "exit"
       puts "To list all of the artists in your library, enter 'list artists'."
       puts "To list all of your songs, enter 'list songs'."
-      puts "To list all of the genres in your library, enter 'list genres'"
+      puts "To list all of the genres in your library, enter 'list genres'."
       user_input = gets.strip
     end 
     
