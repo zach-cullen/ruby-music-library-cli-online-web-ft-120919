@@ -34,6 +34,9 @@ class MusicLibraryController
         puts "listing artist"
       when "list genre"
         puts "listing genre"
+      else
+        puts "huh?"
+      end
     end
     
   end
