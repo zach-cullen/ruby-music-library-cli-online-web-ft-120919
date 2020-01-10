@@ -31,6 +31,6 @@ class MusicLibraryController
   end
   
   def list_songs
-    @importer.
+    @importer.library.each {|song| puts song.name}
   end
 end
